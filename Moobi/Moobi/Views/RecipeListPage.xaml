@@ -12,7 +12,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ListView ItemsSource="{x:Static local:RecipeData.AllRecipesGrouped}" 
+        <ListView ItemsSource="{x:Static local:MovieData.AllMoviesGrouped}" 
 				SeparatorVisibility="None" HasUnevenRows="true" 
 				GroupDisplayBinding="{Binding Title}" IsGroupingEnabled="true">
             <ListView.ItemTemplate>
@@ -34,7 +34,7 @@
                                 </Grid.ColumnDefinitions>
                                 <BoxView Color="#3F51B5" 
 									Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
-                                <Label Text="{Binding MealType}" TextColor="White" 
+                                <Label Text="{Binding TipoSala}" TextColor="White" 
 									FontSize="Large" VerticalTextAlignment="Center" Margin="10,0,0,0" 
 									Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
                                 <!--
@@ -48,7 +48,7 @@
 									Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" />
                                 <BoxView Color="#757575" Opacity=".25" 
 									Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" />
-                                <Label Text="{Binding RecipeName}" TextColor="White" 
+                                <Label Text="{Binding Nombre}" TextColor="White" 
 									Margin="-30,5,0,0" FontSize="28" FontAttributes="Bold" 
 									Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" />
                                 <BoxView Color="{Binding WillMakeAgain, Converter={StaticResource colorConvert}}"
@@ -64,7 +64,7 @@
                                 <Label Text="{Binding NumberOfServings, StringFormat='serves {0}'}" 
 									Margin="0,5,0,0" FontSize="Small" TextColor="#757575" 
 									Grid.Row="3" Grid.Column="2" />
-                                <Label Text="View Recipe &gt;" Font="Micro" HorizontalTextAlignment="End" 
+                                <Label Text="Detalles &gt;" Font="Micro" HorizontalTextAlignment="End" 
 									Margin="0,5,10,0" TextColor="#4CAF50" FontAttributes="Bold" 
 									Grid.Row="4" Grid.Column="2" />
                             </Grid>

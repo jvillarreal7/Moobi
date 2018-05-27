@@ -21,9 +21,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\ListViewGrouping.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Recipe.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\RecipeData.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\RecipeGrouping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Movie.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MovieData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MovieGrouping.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Triggers\RequiredValidationTriggerAction.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ValueConverter\BoolToValueConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ValueConverter\RecipeToImageValueConverter.cs" />
