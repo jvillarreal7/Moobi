@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="Moobi.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Moobi.UWP"
+    RequestedTheme="Light">
+
+</Application>

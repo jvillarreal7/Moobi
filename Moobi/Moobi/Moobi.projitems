@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{5A56778C-0AFF-4D73-BD2A-D2C726236DBE}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Moobi</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Behaviors\NumericEntryBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ListViewGrouping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Recipe.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\RecipeData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\RecipeGrouping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Triggers\RequiredValidationTriggerAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ValueConverter\BoolToValueConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ValueConverter\RecipeToImageValueConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EditRecipePage.xaml.cs">
+      <DependentUpon>EditRecipePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\RecipeListPage.xaml.cs">
+      <DependentUpon>RecipeListPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\EditRecipePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\RecipeListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Images\" />
+  </ItemGroup>
+</Project>
