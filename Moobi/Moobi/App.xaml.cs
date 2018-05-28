@@ -13,8 +13,8 @@ namespace Moobi
 		{
 			InitializeComponent();
 
-            //MainPage = new Moobi.Views.EditRecipePage();
-            MainPage = new Moobi.Views.RecipeListPage();
+            //MainPage = new Moobi.Views.EditMoviePage();
+            MainPage = new Moobi.Views.MovieListPage();
         }
 
 		protected override void OnStart ()

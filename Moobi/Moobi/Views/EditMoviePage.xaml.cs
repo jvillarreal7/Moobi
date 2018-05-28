@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Moobi.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class EditRecipePage : ContentPage
+	public partial class EditMoviePage : ContentPage
 	{
-		public EditRecipePage ()
+		public EditMoviePage ()
 		{
 			InitializeComponent ();
 		}

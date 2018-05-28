@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Moobi"
-             x:Class="Moobi.Views.EditRecipePage">
+             x:Class="Moobi.Views.EditMoviePage">
     <ContentPage.Content>
         <TableView Intent="Form" HasUnevenRows="true">
             <TableView.Root>

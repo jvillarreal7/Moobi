@@ -24,26 +24,29 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Movie.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\MovieData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\MovieGrouping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PageDataViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\MovieDetails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\MovieList.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Triggers\RequiredValidationTriggerAction.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ValueConverter\BoolToValueConverter.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ValueConverter\RecipeToImageValueConverter.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\EditRecipePage.xaml.cs">
-      <DependentUpon>EditRecipePage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)ValueConverter\MovieToImageValueConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EditMoviePage.xaml.cs">
+      <DependentUpon>EditMoviePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\RecipeListPage.xaml.cs">
-      <DependentUpon>RecipeListPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MovieListPage.xaml.cs">
+      <DependentUpon>MovieListPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\EditRecipePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\EditMoviePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\RecipeListPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MovieListPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace Moobi
 {
-    public class RecipeToImageValueConverter : IValueConverter
+    public class MovieToImageValueConverter : IValueConverter
     {
         public string Assembly { get; set; }
 

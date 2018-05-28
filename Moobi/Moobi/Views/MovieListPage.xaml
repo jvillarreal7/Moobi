@@ -2,17 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Moobi"
-             x:Class="Moobi.Views.RecipeListPage"
-             Title="Recipes">
+             x:Class="Moobi.Views.MovieListPage"
+             Title="Movies">
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:BoolToValueConverter x:Key="colorConvert" x:TypeArguments="Color" 
 					TrueValue="#16CA86" FalseValue="#FF4081" />
-            <local:RecipeToImageValueConverter x:Key="imageConvert" Assembly="Moobi.Images" />
+            <local:MovieToImageValueConverter x:Key="imageConvert" Assembly="Moobi.Images" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ListView ItemsSource="{x:Static local:MovieData.AllMoviesGrouped}" 
+        <ListView ItemsSource="{x:Static local:MovieData.AllMoviesGrouped}" ItemSelected="OnListViewItemSelected"
 				SeparatorVisibility="None" HasUnevenRows="true" 
 				GroupDisplayBinding="{Binding Title}" IsGroupingEnabled="true">
             <ListView.ItemTemplate>
@@ -37,12 +37,6 @@
                                 <Label Text="{Binding TipoSala}" TextColor="White" 
 									FontSize="Large" VerticalTextAlignment="Center" Margin="10,0,0,0" 
 									Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
-                                <!--
-										 No images are included in this demo project due to licensing. 
-										 To see the images work, add some images to the Images folder, set the build action
-										 to embedded resource and update the RecipeData to have Recipes return the name (include file extension)
-										 of the image.
-									-->
                                 <Image Aspect="AspectFill" BackgroundColor="Gray"
 								 Source="{Binding ImageName, Converter={StaticResource imageConvert}}"
 									Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" />
@@ -55,15 +49,15 @@
 									Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
                                 <BoxView Color="#F6F6F6" 
 									Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" />
-                                <Label Text="{Binding PreparationTime, StringFormat='{0} prep'}" 
+                                <Label Text="{Binding Duracion, StringFormat='{0} min'}" 
 									Margin="10,5,0,0" FontSize="Small" TextColor="#757575" 
 									Grid.Row="3" Grid.Column="0" />
-                                <Label Text="{Binding CookTime, StringFormat='{0} cook'}" 
+                                <Label Text="{Binding CalificacionRT, StringFormat='calif {0}'}" 
 									Margin="0,5,0,0" FontSize="Small" TextColor="#757575" 
 									Grid.Row="3" Grid.Column="1" />
-                                <Label Text="{Binding NumberOfServings, StringFormat='serves {0}'}" 
+                                <!--<Label Text="{Binding Director, StringFormat='{0}'}" 
 									Margin="0,5,0,0" FontSize="Small" TextColor="#757575" 
-									Grid.Row="3" Grid.Column="2" />
+									Grid.Row="3" Grid.Column="2" />-->
                                 <Label Text="Detalles &gt;" Font="Micro" HorizontalTextAlignment="End" 
 									Margin="0,5,10,0" TextColor="#4CAF50" FontAttributes="Bold" 
 									Grid.Row="4" Grid.Column="2" />

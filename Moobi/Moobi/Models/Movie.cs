@@ -23,26 +23,6 @@ namespace Moobi
         public string Clasificacion { get; set; }
 
         public string TipoSala { get; set; }
-
-        // *****************************
-
-        public string RecipeName { get; set; }
-
-        public string PreparationTime { get; set; }
-
-        public string CookTime { get; set; }
-
-        public int NumberOfServings { get; set; }
-
-        public bool WillMakeAgain { get; set; }
-
-        public string MealType { get; set; }
-
-        public string Difficulty { get; set; }
-
-        public string Ingredients { get; set; }
-
-        public string Directions { get; set; }
     }
 
 
@@ -57,10 +37,6 @@ namespace Moobi
         public static string A = "Clasificación A";
         public static string B = "Clasificación B";
         public static string C = "Clasificación C";
-
-        public static string Easy = "Easy";
-        public static string Medium = "Medium";
-        public static string Hard = "Hard";
     }
 
     public static class TipoSala
@@ -69,10 +45,5 @@ namespace Moobi
         public static string SalaVIP = "Sala VIP";
         public static string Sala4DX = "Sala 4DX";
         public static string SalaKids = "Sala Kids";
-
-        public static string Breakfast = "Breakfast";
-        public static string Lunch = "Lunch";
-        public static string Dinner = "Dinner";
-        public static string Snack = "Snack";
     }
 }
