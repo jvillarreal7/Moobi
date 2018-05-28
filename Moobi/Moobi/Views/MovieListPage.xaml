@@ -45,7 +45,7 @@
                                 <Label Text="{Binding Nombre}" TextColor="White" 
 									Margin="-30,5,0,0" FontSize="28" FontAttributes="Bold" 
 									Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" />
-                                <BoxView Color="{Binding WillMakeAgain, Converter={StaticResource colorConvert}}"
+                                <BoxView Color="{Binding EsFavorita, Converter={StaticResource colorConvert}}"
 									Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
                                 <BoxView Color="#F6F6F6" 
 									Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" />
